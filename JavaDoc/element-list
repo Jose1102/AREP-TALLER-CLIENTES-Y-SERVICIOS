@@ -1,0 +1,7 @@
+edu.escuelaing.arep.service.app
+edu.escuelaing.arep.service.app.httpserver
+edu.escuelaing.arep.service.app.multipleserver
+edu.escuelaing.arep.service.app.sockets
+edu.escuelaing.arep.service.app.square
+edu.escuelaing.arep.service.app.url
+edu.escuelaing.arep.service.app.urlreader

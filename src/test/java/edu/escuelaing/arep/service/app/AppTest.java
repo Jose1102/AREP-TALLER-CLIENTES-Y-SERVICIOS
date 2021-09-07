@@ -2,7 +2,6 @@ package edu.escuelaing.arep.service.app;
 
 import java.net.MalformedURLException;
 
-import edu.escuelaing.arep.service.app.calculator.CalculatorServer;
 import edu.escuelaing.arep.service.app.square.SquareServer;
 import edu.escuelaing.arep.service.app.url.Url;
 import junit.framework.Test;
@@ -40,55 +39,11 @@ public class AppTest
     {
         assertTrue( true );
     }
+  
     
-    //Calculator
-    /**
-     * Debería calcular el cos de un número
-     */
-    public void testCalculatorCos () 
-    {
-        CalculatorServer test1 = new CalculatorServer();
-        String res1 = test1.operation("1", "");
-        assertEquals(res1,"Respuesta de servidor: cos 0.9998476951563913");
-    }
+   
     
-    /**
-     * Debería modificar la operación trigonométrica. 
-     */
-    public void testCalculatorModifiqued () 
-    {
-        CalculatorServer test1 = new CalculatorServer();
-        String res1 = test1.operation("fun:tan", "");
-        assertEquals(res1,"Modificando operaciòn");
-    }
-    
-    /**
-     * Debería calcular tangente
-     */
-    public void testCalculatorTangente () 
-    {
-        CalculatorServer test1 = new CalculatorServer();
-        test1.part1= "tan" ;
-        String res1 = test1.operation("1", "");
-        assertEquals(res1,"Respuesta de servidor: tan 0.017455064928217585");
-        test1.part1= "cos";
-    }
-    
-    /**
-     * Debería calcular seno. 
-     */
-    public void testCalculatorSeno () 
-    {
-        CalculatorServer test1 = new CalculatorServer();
-        test1.part1= "sin" ;
-        String res1 = test1.operation("2", "");
-        assertEquals(res1,"Respuesta de servidor: sin 0.03489949670250097");
-        test1.part1= "cos";
-    }
-    
-    
-    //Square
-    
+   
     /**
      * Debería calcular el cuadrado de un número
      */
