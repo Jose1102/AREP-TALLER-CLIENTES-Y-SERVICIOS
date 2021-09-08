@@ -16,7 +16,7 @@ Este taller busca entender como funciona Cliente-Servidor realizando operaciones
 - [Comenzando](#comenzando-).
 - [Ejecutando las pruebas](#ejecutando-las-pruebas)
 - [Diagrama de clases](#diagrama-de-clases-).
-- [Productividad](#productividad).
+- [Productividad](#productividad-).
 - [Javadoc](#javaDoc-).
 - [Licencia](#licencia-)
 
