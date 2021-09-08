@@ -16,6 +16,7 @@ Este taller busca entender como funciona Cliente-Servidor realizando operaciones
 - [Comenzando](#comenzando-).
 - [Ejecutando las pruebas](#ejecutando-las-pruebas)
 - [Diagrama de clases](#diagrama-de-clases-).
+- [Latex](#latex)
 - [Productividad](#productividad-).
 - [Javadoc](#javaDoc-).
 - [Licencia](#licencia-)
@@ -133,6 +134,9 @@ Su objetivo es poder mostrar información por medio de una variable de tipo URL,
 Por último, esta clase por medio de un entrada de una url este guarda el código html en un archivo resultado.html
 
  
+## Latex
+
+[DOCUMENTO](https://github.com/Jose1102/AREP-TALLER-CLIENTES-Y-SERVICIOS/blob/main/latex/docLatex.pdf)
 
 ## Productividad 🛠️
 891 loc / 17 horas
