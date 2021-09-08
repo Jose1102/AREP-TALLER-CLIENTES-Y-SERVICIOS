@@ -1,6 +1,6 @@
 # TALLER DE CLIENTES Y SERVICIOS
 
-Este taller busca entender como funciona Cliente-Servidor realizando operaciones matemáticas y/o trigonométricas, también se realiza un httpServer queriendo tener respuesta de un servidor por medio de un browser usando el protocolo http
+Este taller busca entender como funciona Cliente-Servidor realizando operaciones matemáticas, también se realiza un httpServer queriendo tener respuesta de un servidor por medio de un browser usando el protocolo http
 
 ## Autor ✒️
 
