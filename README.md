@@ -8,7 +8,24 @@ Este taller busca entender como funciona Cliente-Servidor realizando operaciones
 * **Jose María Castro Ortega** - *Autor*  - *Estudiante de ingeniería de sistemas*
 * **07/09/2021** - *Fecha* 
 
-### Pre-requisitos 📋
+
+## Tabla de contenido
+
+- [Circleci](#circleci).
+- [Requisitos](#requisitos-).
+- [Comenzando](#comenzando-).
+- [Ejecutando las pruebas](#ejecutando-las-pruebas)
+- [Diagrama de clases](#diagrama-de-clases-).
+- [Productividad](#productividad).
+- [Javadoc](#javaDoc-).
+- [Licencia](#licencia-)
+
+## Circleci
+
+[![CircleCI](https://circleci.com/gh/circleci/circleci-docs.svg?style=svg)](https://app.circleci.com/pipelines/github/Jose1102/AREP-TALLER-CLIENTES-Y-SERVICIOS)
+
+
+### Requisitos 📋
 * [Maven](https://maven.apache.org/) - Manejador de dependencias
 * [Git](https://git-scm.com/) - Software de control de versiones
 * [Java](https://www.oracle.com/java/) - Lenguaje de programación
