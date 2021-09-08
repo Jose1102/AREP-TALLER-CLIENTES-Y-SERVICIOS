@@ -1,12 +1,12 @@
-# Networking
+# TALLER DE CLIENTES Y SERVICIOS
 
-Este proyecto se busca entender como funciona Cliente-Servidor realizando operaciones matemáticas y/o trigonométricas, también se realiza un httpServer queriendo tener respuesta de un servidor por medio de un browser usando el protocolo http
+Este taller busca entender como funciona Cliente-Servidor realizando operaciones matemáticas y/o trigonométricas, también se realiza un httpServer queriendo tener respuesta de un servidor por medio de un browser usando el protocolo http
 
 ## Autor ✒️
 
 
 * **Jose María Castro Ortega** - *Autor*  - *Estudiante de ingeniería de sistemas*
-* **11/06/2021** - *Fecha* 
+* **07/09/2021** - *Fecha* 
 
 ### Pre-requisitos 📋
 * [Maven](https://maven.apache.org/) - Manejador de dependencias
@@ -31,54 +31,56 @@ mvn package
 
 3. Ejecutar el proyecto 
 
-### Para ejecutar la calculadora que retorna el cuadrado de un número
+### EJERCICIO 1
 
-Se debe ejecutar primero la clase SquareServer como se muestrá a continuación
-![square](https://github.com/Jose1102/WorkNetworking/blob/master/images/squareServer.PNG)
+Escriba un programa en el cual usted cree un objeto URL e imprima en pantalla cada uno de los componentes de una URL. Es decir , debe usar los siguientes métodos: getProtocol, getAuthority, getHost, getPort, getPath, getQuery, getFile, getRef. Asegúrese que ninguno imprima una cadena vacía, esto implica que la URL que use para su objeto debe contener datos suficientes.
 
-Luego se ejecuta la clase SquareClient, donde se debe ingresar el número,  para cerrar el servidor se coloca la palabra Bye. 
+Se debe ejecutar la clase Url.java. Luego de ello en la consola nos aparecerá la información correspondiente como se muesta a continuación:
 
-![square](https://github.com/Jose1102/WorkNetworking/blob/master/images/squareClient.PNG)
-
-
-### Para ejecutar la calculadora trigonométrica
-
-Se debe ejecutar primero la clase CalculatorServer como se muestrá a continuación
-![claculator](https://github.com/Jose1102/WorkNetworking/blob/master/images/claculatorServer.PNG)
-
-Luego se ejecuta la clase CalculatorClient, donde se debe ingresar el número, el primer número realiza la operación de coseno. Para cambiar de función se debe colocar la palabra fun:sin,fun:tan o fun:cos, para cerrar el servidor se coloca la palabra Bye. 
-
-![calculator](https://github.com/Jose1102/WorkNetworking/blob/master/images/claculatorClient.PNG)
+![URL](https://github.com/Jose1102/AREP-TALLER-CLIENTES-Y-SERVICIOS/blob/main/images/url.PNG)
 
 
-### Para ejecutar el UrlReader 
+### EJERCICIO 2
+
+Escriba una aplicación browser que dada una URL lea datos de esa dirección y que los almacene en un archivo con el nombre resultado.html. Intente ver este archivo en el navegador. Su implementación debe ser un programa que reciba el parámetro de URL por medio de la línea de comandos.
+
 
 Se debe ejecutar primero la clase UrlReader, donde debemos ingresar en la consola el link de una pagina de estilo http://link.com
 
-![claculator](https://github.com/Jose1102/WorkNetworking/blob/master/images/UrlReader.PNG)
+![URLREADER](https://github.com/Jose1102/AREP-TALLER-CLIENTES-Y-SERVICIOS/blob/main/images/UrlReader.PNG)
  
 ⚠️ Se crea un archivo resultado.html en la carpeta WWW con el código fuente de la pagina ingresada
 
+### EJERCICIO 3
 
-### Para ejecutar el url con información una URL
+Usando sockets escriba un servidor que reciba un número y responda el cuadrado de este número. Escriba un cliente para probarlo y envíele una secuencia de 20 números.
 
-Se debe ejecutar primero la clase CalculatorServer, donde esta nos mostrará información básica de un link o URL como se muestrá a continuación
+Se debe ejecutar primero la clase SquareServer como se muestrá a continuación
 
-![claculator](https://github.com/Jose1102/WorkNetworking/blob/master/images/url.PNG)
-
-
-
-### Para ejecutar la clase que abre el servidor desde el brower 
-
-Se debe ejecutar primero la clase MultipleServer como se muestrá a continuación
-
-![claculator](https://github.com/Jose1102/WorkNetworking/blob/master/images/claculatorServer.PNG)
-
-Luego se abre el browser y se coloca localhost
-
-![calculator](https://github.com/Jose1102/WorkNetworking/blob/master/images/multiServer2.PNG)
+![Squaree](https://github.com/Jose1102/AREP-TALLER-CLIENTES-Y-SERVICIOS/blob/main/images/squareServer1.PNG)
 
 
+Luego se ejecuta la clase SquareClient, donde se debe ingresar el número, para cerrar el servidor se coloca la palabra Bye. Se realiza una secuenia de 20 números y se cierra el servidor
+
+![SQUARECLIENT](https://github.com/Jose1102/AREP-TALLER-CLIENTES-Y-SERVICIOS/blob/main/images/squareClient.PNG)
+
+
+Al momento de enviar la palabra Bye. Se puede observar que el servidor se cerró de forma correcta y que recibió la secuencia de números
+
+![AS](https://github.com/Jose1102/AREP-TALLER-CLIENTES-Y-SERVICIOS/blob/main/images/squareServer.PNG)
+
+
+### RETO 1
+
+Escriba un servidor web que soporte múlltiples solicitudes seguidas (no concurrentes). El servidor debe retornar todos los archivos solicitados, incluyendo páginas html e imágenes. Construya un sitio web con javascript para probar su servidor. Despliegue su solución en Heroku. NO use frameworks web como Spark o Spring use solo Java y las librerías para manejo de la red
+
+Si se desea correr de forma local lo que se debe hacer es correr la clase MultipleServer como se muestrá a continuación
+
+![MULTIPLESERVER](https://github.com/Jose1102/AREP-TALLER-CLIENTES-Y-SERVICIOS/blob/main/images/multiServer1.PNG)
+ 
+Luego de ello se coloca en el browser ``` localhost:35000/mypage.html ``` como se ve a continuación
+
+![AAA](https://github.com/Jose1102/AREP-TALLER-CLIENTES-Y-SERVICIOS/blob/main/images/multiServer2.PNG)
 
 
 ## Ejecutando las pruebas ⚙️
@@ -88,21 +90,9 @@ Luego se abre el browser y se coloca localhost
 ```
 mvn test
 ```
-![PRUEBAS](https://github.com/Jose1102/WorkNetworking/blob/master/images/test.PNG)
+![PRUEBAS](https://github.com/Jose1102/AREP-TALLER-CLIENTES-Y-SERVICIOS/blob/main/images/test.PNG)
 
 ## Diagrama de clases 📖
-
-![DIAGRAMA](https://github.com/Jose1102/WorkNetworking/blob/master/images/diagrama/calculator.PNG)
-
-
-Se tienen dos clases una que es la clase cliente y la otra que el servidor donde la clase CalculatorServer realiza las operaciones trigonométricas 
-
-
-
-![DIAGRAMA2](https://github.com/Jose1102/WorkNetworking/blob/master/images/diagrama/http.PNG)
-
-
-Por otra lado se tiee la clase HttpServer que es una clase que nos ayuda a conectarnos por medio de un browser 
 
 
 
@@ -132,8 +122,8 @@ Por último, esta clase por medio de un entrada de una url este guarda el códig
 
 ## JavaDoc 📖
 
-Para consultar la carpeta de [JAVADOC](https://github.com/Jose1102/WorkNetworking/tree/master/JavaDoc) .
+Para consultar la carpeta de [JAVADOC](https://github.com/Jose1102/AREP-TALLER-CLIENTES-Y-SERVICIOS/tree/main/JavaDoc) .
 
 ## Licencia 📌
 
-Este proyecto está bajo la Licencia Pública General GNU - consulte el archivo de [LICENCIA](https://github.com/Jose1102/WorkNetworking/blob/master/LICENSE.txt) para obtener más detalles.
+Este proyecto está bajo la Licencia Pública General GNU - consulte el archivo de [LICENCIA](https://github.com/Jose1102/AREP-TALLER-CLIENTES-Y-SERVICIOS/blob/main/LICENSE.txt) para obtener más detalles.
