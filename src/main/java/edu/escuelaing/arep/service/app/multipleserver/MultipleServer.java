@@ -115,6 +115,6 @@ public class MultipleServer {
         if (System.getenv("PORT") != null) {
         return Integer.parseInt(System.getenv("PORT"));
         }
-        return 4567; //returns default port if heroku-port isn't set(i.e. on localhost)
+        return 35000; //returns default port if heroku-port isn't set(i.e. on localhost)
     }
 }
